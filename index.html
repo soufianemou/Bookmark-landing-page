@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d4783e555.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Bookmark</title>
+</head>
+<body class="font-rubik ">
+    
+    <header class="">
+        <div class="bg-white fixed top-0 w-full z-50 shadow-md" id="top">
+            <div class="w-[80%] mx-auto ">
+                <div class=" flex justify-between items-center py-4">
+                    <a href="./index.html"><img src="./images/logo-bookmark.svg" alt=""></a>
+                    <nav class="hidden md:flex gap-8 text-slate-600 font-medium ms-auto">
+                        <a href="#Features" class="hover:text-[#FA5A5B] transition-all duration-500 uppercase ">Features</a>
+                        <a href="#extension" class="hover:text-[#FA5A5B] transition-all duration-500 uppercase ">extension</a>
+                        <a href="#contact" class="hover:text-[#FA5A5B] transition-all duration-500 uppercase ">Contact</a>
+                    </nav>
+                    <button class="hidden md:block ml-14 uppercase text-white font-semibold bg-[#FA5A5B] border-2 border-[#FA5A5B]  py-2 px-8 shadow-lg rounded-lg hover:bg-white hover:text-[#FA5A5B] transition-all duration-500">Login</button>
+                    <span class="cursor-pointer md:hidden "><i id="open" class="fa-solid fa-2x fa-bars hide"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="overflow-hidden md:hidden fixed top-0 z-40 w-full" id="header2">
+        <div class="bg-[#243160cc] h-screen ">
+        <div class="w-[80%] mx-auto">
+            <div class="">
+                <div class="flex flex-col w-full mx-auto text-center gap-10 mt-16 ">
+                    <ul class="flex flex-col text-white font-medium gap-6 pt-10">
+                        <a href="#Features" class="hover:text-[#FA5A5B] transition-all duration-500"><li class="border-y py-8 uppercase">Features</li></a>
+                        <a href="#extension" class="hover:text-[#FA5A5B] transition-all duration-500"><li class="py-2 uppercase">extension</li></a>
+                        <a href="#contact" class="hover:text-[#FA5A5B] transition-all duration-500"><li class="border-y py-8 uppercase">Contact</li></a>
+                    </ul>
+                    <button class="uppercase border-2 text-white font-semibold hover:bg-white  hover:text-[#10142C] py-2 px-8 shadow-lg rounded-lg w-full mx-auto transition-all duration-500">Login</button>
+                </div> 
+                <div class="justify-center flex gap-9 my-40 text-white">
+                    <a href="" class="hover:text-[#FA5A5B] hover:scale-150 transition-all duration-500"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                    <a href="" class="hover:text-[#FA5A5B] hover:scale-150 transition-all duration-500"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+     <!-- start main section  -->
+     <section class="overflow-hidden mt-[140px] md:mt-[180px]">
+        <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 md:order-last">
+            <div> 
+                <img src="./images/illustration-hero.png" alt="" id="main" class="">
+            </div>
+            <div class="text-center md:text-start lg:mt-20 md:mt-10 md:order-first">
+                <h1 class="text-3xl font-bold text-[#242946]">A Simple Bookmark Manager</h1>
+                <p class="my-8 w-[300px] md:mx-0 mx-auto text-[#C2C1C5] font-bold"> A clean and simple interface to organize your favourite websites. Open a new 
+                    browser tab and see your sites load instantly. Try it for free.</p>
+                <div >
+                    <button class=" p-2 mr-3 font-bold bg-[#5368DF] text-white border-2 border-[#5368DF] rounded-md hover:text-[#5368DF] hover:bg-white transition-all duration-500">Get it on Chrome</button>
+                    <button class=" p-2 font-bold bg-[#F7F7F7] rounded-md text-[#C2C1C5] border-2 shadow-md hover:text-[#242A45] hover:border-2 hover:border-[#242A45] transition-all duration-500">Get it on Firefox</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main section  -->
+
+
+    <!-- start Features section  -->
+    <section class="my-10 bg-[#FAFCFF] py-14" id="Features">
+        <div class="w-[80%] mx-auto">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-[#242946] my-3">Features</h2>
+                <p class=" md:mx-0 mx-auto text-[#C2C1C5] font-bold">Our aim is to make it quick and easy for you to access your favourite websites. 
+                    Your bookmarks sync between your devices so you can access them on the go.</p>
+            </div>
+            <div id="article" class="text-center my-14  flex flex-col md:flex-row md:gap-10 md:mx-auto md:justify-center">
+                <h1 id="tab1" class="cursor-pointer border-y  md:border-b md:border-y-0 py-3 underline underline-offset-[16px] decoration-4 decoration-[#FA5A5B]">Simple Bookmarking</h1>
+                <h1 id="tab2" class="cursor-pointer py-3 md:border-b">Speedy Searching</h1>
+                <h1 id="tab3" class="cursor-pointer border-y md:border-b md:border-y-0 py-3 ">Easy Sharing</h1>
+            </div>
+            
+            <div class="text-center grid grid-cols-1 md:grid-cols-2 md:gap-20 items-center">               
+                <img id="currentImg" src="./images/illustration-features-tab-1.png" alt="" class="mx-auto">               
+                <div class="md:text-start">
+                    <h3 id="curHead" class="text-2xl font-bold text-[#242946] mt-14 md:mt-0">Bookmark in one click</h3>
+                    <p id="curPara" class="md:mx-0 my-6 mx-auto text-[#C2C1C5] font-bold">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        gives you complete control over how you manage your favourite sites.</p>
+                    <button class=" py-2 px-4 font-bold bg-[#5368DF] text-white rounded-md border-2 border-[#5368DF] hover:text-[#5368DF] hover:bg-white transition-all duration-500">More info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Features section  -->
+
+    <!-- start extension's section  -->
+    <section class="my-10 py-14" id="extension">
+        <div class="w-[80%] mx-auto">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-[#242946] my-3">Download the extension</h2>
+                <p class=" md:mx-0 mx-auto text-[#C2C1C5] font-bold">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you’d like us to prioritize.</p>
+            </div>   
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-7 mb-16 gap-10 mx-auto">
+                <div class="my-6 md:my-0 shadow-xl pt-16 pb-7 text-center rounded-xl">
+                    <img src="./images/logo-chrome.png" alt="" class="mx-auto">
+                    <h4 class="mt-8 mb-2">Add to Chrome</h4>
+                    <h5 class="mb-8">Minimum version 62</h5>
+                    <img src="./images/bg-dots.png" alt="" class="mb-5 mx-auto">
+                    <button class=" py-2 px-6 font-medium bg-[#5368DF] text-white rounded-md border-2 border-[#5368DF] hover:text-[#5368DF] hover:bg-white transition-all duration-500">Add & Install Extension</button>
+                </div>
+                <div class="my-6 md:my-0 shadow-xl pt-16 pb-7 text-center rounded-xl relative lg:top-[50px]">
+                    <img src="./images/logo-firefox.png" alt="" class="mx-auto">
+                    <h4 class="mt-8 mb-2">Add to Firefox</h4>
+                    <h5 class="mb-8">Minimum version 55</h5>
+                    <img src="./images/bg-dots.png" alt="" class="mb-5 mx-auto">
+                    <button class=" py-2 px-6 font-medium bg-[#5368DF] text-white rounded-md border-2 border-[#5368DF] hover:text-[#5368DF] hover:bg-white transition-all duration-500">Add & Install Extension</button>
+                </div>
+                <div class="my-6 md:my-0 shadow-xl pt-16 pb-7 text-center rounded-xl relative lg:top-[100px]">
+                    <img src="./images/logo-opera.png" alt="" class="mx-auto">
+                    <h4 class="mt-8 mb-2">Add to Opera</h4>
+                    <h5 class="mb-8">Minimum version 46</h5>
+                    <img src="./images/bg-dots.png" alt="" class="mb-5 mx-auto">
+                    <button class=" py-2 px-6 font-medium bg-[#5368DF] text-white rounded-md border-2 border-[#5368DF] hover:text-[#5368DF] hover:bg-white transition-all duration-500">Add & Install Extension</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end extension's section  -->
+
+    <!-- start frequently question's section  -->
+    <section class="bg-[#FAFCFF]">
+        <div class="w-[80%] lg:w-[60%] mx-auto py-14">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-[#242946] my-3">Frequently Asked Questions</h3>
+                <p class=" md:mx-0 mx-auto text-[#C2C1C5] font-bold">Here are some of our FAQs. If you have any other questions you’d like 
+                    answered please feel free to email us.</p>
+            </div>
+            <div class="mt-10" id="quetions">
+                <hr>
+                <!-- question n1 -->
+                <div class="my-4 cursor-pointer" id="n1">
+                    <div class="flex justify-between items-center my-7 ">
+                        <h5 class="font-bold text-lg text-[#242946] hover:text-[#FA5A5B]">What is Bookmark?</h5>
+                        <button><i class="fa-solid fa-chevron-down text-2xl hover:text-[#FA5A5B] text-[#5368DF]"></i></button>
+                    </div>
+                    <p class="text-[#9e9da0] font-bold"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                </div>
+                <hr>
+                <!-- question n2 -->
+                <div class="my-4 cursor-pointer" id="n2">
+                    <div class="flex justify-between items-center my-7">
+                        <h5 class="font-bold text-lg text-[#242946] hover:text-[#FA5A5B]">How can I request a new browser?</h5>
+                        <button ><i class="fa-solid fa-chevron-down text-2xl hover:text-[#FA5A5B] text-[#5368DF]"></i></button>
+                    </div>
+                    <p class="text-[#9e9da0] font-bold">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                </div>
+                <hr>
+                <!-- question n3 -->
+                <div class="my-4 cursor-pointer" id="n3">
+                    <div class="flex justify-between items-center my-7">
+                        <h5 class="font-bold text-lg text-[#242946] hover:text-[#FA5A5B]">Is there a mobile app?</h5>
+                        <button ><i class="fa-solid fa-chevron-down text-2xl text-[#5368DF]"></i></button>
+                    </div>
+                    <p class="text-[#9e9da0] font-bold">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                        sollicitudin ex et ultricies bibendum. mattis.</p>
+                </div>
+                <hr>
+                <!-- question n4 -->
+                <div class="my-4 cursor-pointer" id="n4">
+                    <div class="flex justify-between items-center my-7">
+                        <h5 class="font-bold text-lg text-[#242946] hover:text-[#FA5A5B]">What about other Chromium browsers?</h5>
+                        <button ><i class="fa-solid fa-chevron-down text-2xl hover:text-[#FA5A5B] text-[#5368DF]"></i></button>
+                    </div>
+                    <p class="text-[#9e9da0] font-bold">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                        vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="text-center my-10"> 
+                <button  class=" py-2 px-4 font-bold bg-[#5368DF] text-white rounded-md shadow-md border-2 border-[#5368DF] hover:text-[#5368DF] hover:bg-white transition-all duration-500">More info</button>
+            </div>
+        </div>
+    </section>
+    <!-- end frequently question's section  -->
+
+    <!-- start contactx's section  -->  
+    <section class="bg-[#5368df] py-5" id="contact">
+        <div class="w-[80%] mx-auto">
+            <div class="text-center">
+                <h5 class="text-white font-bold my-5">35,000+ already joined</h5>
+                <h4 class="text-white text-3xl font-bold">Stay up-to-date with what we’re doing</h4>
+            </div>
+            <div class="h-[200px] flex justify-center">
+                <form action="./index.html" method="post" id="form" class="my-5 relative text-center">
+                    <input type="text" name="email" id="email" class="w-[300px] py-2 px-4  rounded-md border-2 outline-0" placeholder="Enter your adress email">
+                    <span id="symbol" class="absolute right-[10px] top-1"><i class="fa-solid fa-circle-xmark text-3xl text-red-500"></i></span>
+                    <span id="result" class="absolute left-0 bottom-[90px] bg-[#FA5A5B] w-[300px] mx-auto font-semibold text-white rounded-md">Whoops, Make sure it's an email</span>
+                    <br>
+                    <input type="submit" class="mt-10 cursor-pointer bg-[#FA5A5B] text-white  py-2 px-8  rounded-md font-bold border-2 border-[#FA5A5B] shadow-lg  hover:bg-white hover:text-[#FA5A5B] transition-all duration-500" value="Contact Us">
+                </form>
+            </div>
+        </div>       
+    </section>
+    <!-- end contact section  -->
+
+    <!-- start footer -->
+    <footer class="bg-[#29376b] py-5">
+        <div class="w-[80%] mx-auto">
+            <div class="flex flex-col sm:flex-row items-center gap-6 justify-center">
+                <a href="./index.html"><img src="./images/logo-bookmark.svg" alt=""></a>
+                <ul class="flex flex-col sm:flex-row gap-4 md:gap-10 items-center text-slate-600 font-medium">
+                    <a href="#Features" class="hover:text-[#FA5A5B] transition-all duration-500 text-white"><li class="uppercase">Features</li></a>
+                    <a href="#extension" class="hover:text-[#FA5A5B] transition-all duration-500 text-white"><li class="uppercase">extension</li></a>
+                    <a href="#contact" class="hover:text-[#FA5A5B] transition-all duration-500 text-white"><li class="uppercase">Contact</li></a>
+                </ul>
+                <div class="flex gap-9 text-white md:ms-auto">
+                    <a href="" class="hover:text-[#FA5A5B] hover:scale-150 transition-all duration-500"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                    <a href="" class="hover:text-[#FA5A5B] hover:scale-150 transition-all duration-500"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mt-5">
+                <p class="text-center text-white">Copyright &copy; 2023. All Rights Reserved Coded by  <a href="https://www.linkedin.com/in/soufiane-mouahhidi/" target="_blank" class="font-bold text-[#FA6465]"> Soufiane Mouahhidi</a></p>
+            </div>
+            <div>
+                <span id="up" class="transition-all duration-300 cursor-pointer fixed right-[-50px] bottom-10"><i class="fa-solid fa-circle-chevron-up fa-3x text-[#FA6465] text-center "></i></span>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./src/main.js"></script>
+
+</body>
+</html>
